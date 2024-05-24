@@ -1,0 +1,236 @@
+
+*{
+	margin: 0px;
+    padding: 0px;
+}
+body{
+	background-image:url(Background.jpeg);
+	background-repeat: no-repeat;
+	background-position:  center;
+	background-attachment: fixed;
+}
+.center{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+}
+.topnav {
+    
+    float: left;
+    display: block;
+    color: black;
+    text-align: left ;
+    margin-top: -50px;
+}
+.topnav .bar{
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+ .topnav .srchlogo {
+    width: 3%;
+    margin-top: 10px; 
+    
+}
+ .topnav .srchlogo:hover{
+ 	background-color: lightgray;
+ 	border-style: solid;
+ 	border-radius: 20px;
+ 	width: 2.11%;
+ }
+.topnav .shop{
+	text-align: center;
+	margin-right: 650px;
+	margin-top: -20px;
+}
+.topnav .about{
+	text-align: center;
+	margin-left: 600px;
+	margin-top: -10px;
+}
+ 
+.cart{
+	width: 2%;
+	float: right;
+    margin-right: 20px;
+    margin-top: -20px;
+}	
+.signin{
+	width: 2%;
+	float: right;
+   margin-right: 50px;
+   margin-top: -20px;
+	}
+
+.menu ul{
+	list-style: none;
+	z-index: 8;
+	position: relative;
+}
+.menu ul li{
+	color: black;
+	background-color: rgba(139, 255, 81, 0.6);
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	width: 19.77%;
+	text-align: center;
+	border-left: solid;
+	border-color: lightslategrey;
+	z-index: 8;
+}
+.menu ul ul a{
+	text-decoration: none;
+	color: black;
+	z-index: 9;
+}
+.menu ul li:hover{
+	color: black;
+	border-bottom: solid;
+	background-color: lightgray;
+	z-index: 8;
+
+}
+.menu ul li ul {
+  width: 100%;
+}
+.menu ul li  ul li{
+	width: 100%;
+	border-left: none;
+	z-index: 8;
+}
+.menu ul  ul{
+	display: none;
+	z-index: 8;
+}
+.menu ul li:hover ul {
+	display: block;
+	z-index: 8;
+}
+/*-----------Content--------------*/
+ .pic{
+	width: 30%;
+	display: grid;
+	margin-left: 250px;
+	margin-top: 200px;
+}
+.Content {
+	margin-left: 790px;
+	margin-top: -600px;
+	margin-bottom: 600px;
+}
+.Content .size ul{
+   border: solid;
+   list-style: none;
+   position: relative;
+   float: left;
+   margin-top:40px;
+   background-color: rgba(7, 177, 63, 0.5);
+}
+.Content .size ul li{
+	float: left;
+	padding: 20px;
+
+}
+.Content .size ul li:hover{
+	color: black;
+	background-color: lightgreen;
+}
+.Content .ad_cart{
+	margin-top: 120px;
+	border: outset  ;
+	background-color:rgba(56, 119, 27, 0.5) ;
+	text-align: center;
+	padding-top: 10px;
+	width: 350px;
+  height: 50px;
+  border: 5px outset black;
+  box-sizing: border-box;
+}
+
+.Content .ad_cart:hover{
+   background-color: lightgreen;
+}
+.Content .bin{
+   margin-top: 10px;
+	border: outset  ;
+	background-color:rgba(56, 119, 27, 0.5) ;
+	text-align: center;
+	padding-top: 10px;
+	width: 450px;
+  height: 50px;
+  border: 5px outset black;
+  box-sizing: border-box;
+
+}
+
+.Content .bin:hover{
+	 background-color: lightgreen;
+}
+.Content img{
+	width: 10%;
+	margin-left: 600px;
+}
+.fit_icon{
+	margin-top: -400px;
+}
+
+
+
+/*-----Footer-----*/
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-section {
+    margin: 10px 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links, .social-media-links, .app-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li, .social-media-links li, .app-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a, .social-media-links a, .app-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover, .social-media-links a:hover, .app-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media-links img {
+    width: 32px;
+    height: 32px;
+}
+.app-links img{
+	width: 200px;
+    height: 100px;
+
+}

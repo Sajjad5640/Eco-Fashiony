@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_page</title>
+    <link rel="icon" type="image/x-icon" href="home image/icon.png" >
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+           
+            background-image:url(Background.jpeg);
+            background-repeat: no-repeat;
+            background-position:  center;
+            background-attachment: fixed;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 18%;
+        }
+
+         .topnav {
+    
+                float: left;
+                display: block;
+                color: black;
+                text-align: left ;
+                margin-top: -50px;
+            }
+            .topnav .bar{
+                float: left;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+
+             .topnav .srchlogo {
+                width: 3%;
+                margin-top: 10px; 
+                
+            }
+             .topnav .srchlogo:hover{
+                background-color: lightgray;
+                border-style: solid;
+                border-radius: 20px;
+                width: 2.11%;
+             }
+            .topnav .shop{
+                text-align: center;
+                margin-right: 650px;
+                margin-top: -20px;
+            }
+            .topnav .about{
+                text-align: center;
+                margin-left: 600px;
+                margin-top: -10px;
+            }
+            .cart{
+                width: 2%;
+                float: right;
+                margin-right: 20px;
+                margin-top: -20px;
+            }   
+            .signin{
+                width: 2%;
+                float: right;
+               margin-right: 50px;
+               margin-top: -20px;
+                }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        .form-container {
+            background-color: greenyellow;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .form-container a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+            text-decoration: none;
+        }
+        .form-container a:hover {
+            color: #555;
+        }
+        .login-btn {
+          display: block;
+          width: 200px;
+          height: 50px;
+          margin:  auto;
+          background-color: #4CAF50;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          line-height: -100px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+          background-color: #3e8e41;
+        }
+        /*-----Footer-----*/
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .footer-section {
+            margin: 10px 10px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-links, .social-media-links, .app-links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-links li, .social-media-links li, .app-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a, .social-media-links a, .app-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover, .social-media-links a:hover, .app-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-media-links img {
+            width: 32px;
+            height: 32px;
+        }
+        .app-links img{
+            width: 200px;
+            height: 100px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <a href="Home.html"><img src="home image/Brand_logo.png" alt="Logo" class="center"></a>
+         <div class="topnav">
+            <input class="bar" type="text" placeholder="Search..">
+            <img src="home image/search-icon-png-23.png" class="srchlogo">
+            <h4 class="shop">shop</h4>
+            <h4 class="about">about</h4>
+            <img src="home image/R (1).png" class="cart">
+            <a href="sing_in .html"><img src="home image/R.png" class="signin"></a>
+           
+        </div>
+    <div class="container">
+        <div class="header">
+            <h1>Login</h1>
+        </div>
+        <div class="form-container">
+            <form action="/login" method="post">
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+               
+                  <button type="submit" class="login-btn">  <a href="Home.html" target="_blank">Login  </a></button>
+               
+            </form>
+            <a href="sing_in .html">Create an account</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>© 2024 Eco & Fashiony. All Rights Reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-media-links">
+                    <li><a href="#"><img src="home image/facebook-logo-3.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="home image/OIP.jpg" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="home image/R (2).png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="home image/tiktok.webp" alt="TikTok"></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Download Our App</h4>
+                <ul class="app-links">
+                    <li><a href="#"><img src="home image/Logo Available_on_the_App_Store.png" alt="Apple Store"></a></li>
+                    <li><a href="#"><img src="home image/R (3).png" alt="Google Play"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

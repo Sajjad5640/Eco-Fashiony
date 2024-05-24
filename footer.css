@@ -1,0 +1,188 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+           
+            background-image:url(Background.jpeg);
+            background-repeat: no-repeat;
+            background-position:  center;
+            background-attachment: fixed;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 18%;
+        }
+
+         .topnav {
+    
+                float: left;
+                display: block;
+                color: black;
+                text-align: left ;
+                margin-top: -50px;
+            }
+            .topnav .bar{
+                float: left;
+                margin-left: 10px;
+                margin-top: 10px;
+                width: 10%;
+            }
+
+             .topnav .srchlogo {
+                width: 3%;
+                margin-top: 10px; 
+                
+            }
+             .topnav .srchlogo:hover{
+                background-color: lightgray;
+                border-style: solid;
+                border-radius: 20px;
+                width: 2.11%;
+             }
+            .topnav .shop{
+                text-align: center;
+                margin-right: 650px;
+                margin-top: -20px;
+            }
+            .topnav .about{
+                text-align: center;
+                margin-left: 600px;
+                margin-top: -10px;
+            }
+            .cart{
+                width: 2%;
+                float: right;
+                margin-right: 20px;
+                margin-top: -20px;
+            }   
+            .signin{
+                width: 2%;
+                float: right;
+               margin-right: 50px;
+               margin-top: -20px;
+                }
+        .container {
+                background-color:greenyellow;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 400px;
+                text-align: center;
+                margin: 200px 500px;
+            }
+
+            .header h1 {
+                margin-bottom: 20px;
+                font-size: 24px;
+                color: #333;
+            }
+
+            .form-container {
+                width: 100%;
+                 background-color: greenyellow;
+                    padding: 30px;
+                    border-radius: 5px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                margin-bottom: 15px;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: calc(100% - 22px);
+                box-sizing: border-box;
+            }
+
+            button.register-btn {
+                padding: 10px;
+                font-size: 16px;
+                color: #fff;
+                background-color: #007bff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            button.register-btn:hover {
+                background-color: #0056b3;
+            }
+
+            .login-link {
+                margin-top: 15px;
+            }
+
+            .login-link a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+            .login-link a:hover {
+                text-decoration: underline;
+            }
+        /*-----Footer-----*/
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .footer-section {
+            margin: 10px 10px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-links, .social-media-links, .app-links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-links li, .social-media-links li, .app-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a, .social-media-links a, .app-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover, .social-media-links a:hover, .app-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-media-links img {
+            width: 32px;
+            height: 32px;
+        }
+        .app-links img{
+            width: 200px;
+            height: 100px;
+
+        }
